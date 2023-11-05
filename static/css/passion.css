@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: #121212;
 }
 
 body.active {
@@ -21,7 +22,6 @@ Gallery Style
 .gallery {
     width: 100%;
     height: 100%;
-    /* position: fixed; 이거는 소용이 없지 않나?*/
     position: relative;
     top: 0;
 }

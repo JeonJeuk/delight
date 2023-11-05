@@ -1,0 +1,581 @@
+/*---------------
+Common Factor
+----------------*/
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    src:
+    url('/fonts/Pretendard-Thin.woff2') format('woff2')
+    url('/fonts/Pretendard-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src:
+    url('/fonts/Pretendard-ExtraLight.woff2') format('woff2')
+    url('/fonts/Pretendard-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src:
+    url('/fonts/Pretendard-Light.woff2') format('woff2')
+    url('/fonts/Pretendard-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src:
+    url('/fonts/Pretendard-Regular.woff2') format('woff2')
+    url('/fonts/Pretendard-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src:
+    url('/fonts/Pretendard-Medium.woff2') format('woff2')
+    url('/fonts/Pretendard-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src:
+    url('/fonts/Pretendard-SemiBold.woff2') format('woff2')
+    url('/fonts/Pretendard-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src:
+    url('/fonts/Pretendard-Bold.woff2') format('woff2')
+    url('/fonts/Pretendard-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src:
+    url('/fonts/Pretendard-ExtraBold.woff2') format('woff2')
+    url('/fonts/Pretendard-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    src:
+    url('/fonts/Pretendard-Black.woff2') format('woff2')
+    url('/fonts/Pretendard-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BangStart';
+    font-weight: 100;
+    src:
+    url("/fonts/Bang-Start.woff2") format('woff2'),
+    url("/fonts/Bang-Start.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    src:
+    url("/fonts/Bang-Passion.woff2") format('woff2'),
+    url("/fonts/Bang-Passion.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'BangExplode';
+    font-weight: 100;
+    src:
+    url("/fonts/Bang-Explode.woff2") format('woff2'),
+    url("/fonts/Bang-Explode.ttf") format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #121212;
+    font-family: 'Pretendard';
+}
+
+body.active {
+    height: auto;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*---------------
+Title Style
+----------------*/
+.title {
+    position: absolute;
+    width: 100%;
+    top: 140px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    transition: all 1s ease-in-out;
+}
+
+.title .titleMain {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.title .titleMain.active {
+    opacity: 0;
+}
+
+.title .answer1st {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.title .answer1st.active {
+    opacity: 1;
+}
+
+.title h1 {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title h1 span {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    color: #FF1345;
+}
+
+/*---------------
+Gallery Style
+----------------*/
+.gallery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.gallery .galleryWrapper {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    opacity: 1;
+}
+
+.gallery .galleryWrapper.active {
+    opacity: 0;
+}
+
+.gallery .galleryWrapper .galleryItem {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 15px;
+    background-size: contain;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+}
+
+.gallery .galleryWrapper .galleryItem.hide {
+    display: none;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData {
+    width: 100%;
+    height: 100%;
+    background: #343434;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: #fff;
+    /* pointer-events: none; */
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData h1 {
+    font-size: 36px;
+    font-weight: 600;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData p {
+    color: #FF1345;
+    font-size: 36px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper {
+    position: absolute;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper div {
+    width: 76px;
+    height: 76px;
+    background: #fff;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper div.active {
+    width: 76px;
+    height: 76px;
+    background: #121212;
+}
+
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper img,
+.gallery .galleryWrapper .galleryItem .backgroundWrapper p,
+.gallery .galleryWrapper .galleryItem .backgroundWrapper div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .num {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    font-family: 'BangPassion';
+    font-weight: 100;
+    color: #FF1345;
+    font-size: 12px;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .num.active {
+    opacity: 0;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .num span {
+    font-size: 36px;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .crown {
+    background: transparent;
+    display: block;
+    transition: all .1s ease-in-out;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .crow.active {
+    background: transparent;
+    display: none;
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .crown img {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.gallery .galleryWrapper .galleryItem1 {
+    left: 20.5%;
+    opacity: .3;
+    transform: translate(-50%);
+}
+
+.gallery .galleryWrapper .galleryItem2,
+.gallery .galleryWrapper .galleryItem4 {
+    width: 270px;
+    height: 270px;
+    opacity: .5;
+}
+
+.gallery .galleryWrapper .galleryItem2 {
+    left: 33%;
+    transform: translateX(-50%);
+}
+
+.gallery .galleryWrapper .galleryItem3 {
+    width: 360px;
+    height: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 3;
+}
+
+.gallery .galleryWrapper .galleryItem4 {
+    left: 67%;
+    transform: translate(-50%);
+    opacity: .5;
+    z-index: 1;
+}
+
+.gallery .galleryWrapper .galleryItem5 {
+    left: 79.5%;
+    transform: translate(-50%);
+    opacity: .3;
+}
+
+.gallery .galleryWrapper .galleryItem2 .backgroundWrapper,
+.gallery .galleryWrapper .galleryItem4 .backgroundWrapper {
+    transform: scale(.8);
+}
+
+.gallery .galleryWrapper .galleryItem1 .backgroundWrapper,
+.gallery .galleryWrapper .galleryItem5 .backgroundWrapper {
+    transform: scale(.5);
+}
+
+.gallery .galleryWrapper .galleryItem3 .backgroundWrapper .backgroundType3 {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transition: all 1s cubic-bezier(0, 0, 0.41, 1);
+}
+
+.gallery .galleryWrapper .galleryItem3 .backgroundWrapper .backgroundType3.active {
+    transform: translate(-50%, -50%) scale(40) rotate(-45deg);
+    transition: all 1s cubic-bezier(0.66,-0.01, 1, 1);
+}
+
+.gallery .galleryWrapper .galleryItem .backgroundWrapper .galleryBackground2.hide {
+    display: none;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    /* pointer-events: none; */
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData.ative {
+    opacity: 0;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData h1,
+.gallery .galleryWrapper .galleryItem .galleryData p {
+    pointer-events: none;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData1 h1,
+.gallery .galleryWrapper .galleryItem .galleryData5 h1,
+.gallery .galleryWrapper .galleryItem .galleryData1 p,
+.gallery .galleryWrapper .galleryItem .galleryData5 p {
+    font-size: 18px;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData3 h1,
+.gallery .galleryWrapper .galleryItem .galleryData3 p {
+    font-size: 36px;
+}
+
+.gallery .galleryWrapper .galleryItem .galleryData2 h1,
+.gallery .galleryWrapper .galleryItem .galleryData4 h1,
+.gallery .galleryWrapper .galleryItem .galleryData2 p,
+.gallery .galleryWrapper .galleryItem .galleryData4 p {
+    font-size: 26px;
+}
+
+.gallery .galleryControls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 100px;
+    margin: 0;
+    z-index: 1;
+}
+
+.gallery .galleryControls.active {
+    display: none;
+}
+
+.gallery .galleryControls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.gallery .galleryControls .galleryControlsButton:focus {
+    outline: none;
+}
+
+.gallery .galleryControls .galleryControlsPrevious {
+    background-image: url('/static/img/passion/leftBtn.svg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.gallery .galleryControls .galleryControlsPrevious:hover::before {
+    left: -40px;
+}
+
+.gallery .galleryControls .galleryControlsNext {
+    background-image: url('/static/img/passion/rightBtn.svg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.gallery .galleryControls .galleryControlsNext:hover::before {
+    right: -40px;
+}
+
+/*---------------
+Answer Style
+----------------*/
+.answer {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 0;
+}
+
+.answer.active {
+    opacity: 1;
+    z-index: 20;
+}
+
+.answer .answerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: 150px;   
+}
+
+.answer .answerWrapper .answerBox {
+    width: 42.5%;
+    min-height: 150px;
+    max-height: 150px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    padding: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.answer .answerWrapper .answerBox:hover {
+    background: #FF1345;
+    color: #fff;
+}
+
+.answer .answerWrapper .answerBox p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#text {
+    padding-top: 50px;
+}
+
+.answer .answerWrapper .answerBox .answerName {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.answer .answerWrapper .answerBox .answerName p {
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+.answer .answerWrapper .answerBox .answerName img {
+    width: 30px;
+    height: 30px;
+}
+.answer .backButton {
+    position: absolute;
+    background-image: url('/static/img/passion/leftBtn.svg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+/*---------------
+Category Style
+----------------*/
+.category {
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    font-family: 'BangPassion';
+    font-weight: 100;
+}
+
+.category.active {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.category .week {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    border-radius: 30px;
+    padding: 5px 40px;
+}
+
+.category .week img {
+    padding-right: 14px;
+    padding-bottom: 8px;
+}
+
+.category .week p {
+    font-size: 24px;
+    opacity: .6;
+}
+
+.category .thisWeek {
+    background: #fff;
+}
+
+.category .thisWeek p {
+    color: #000000;
+}
+

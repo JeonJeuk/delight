@@ -260,8 +260,8 @@ imageList.forEach((image, index) => {
     var mathRandom = (Math.random() * (60 - 20) + 20);
     var imageLeft = index > 0 ? sliderListContainer.children[index - 1].getBoundingClientRect().left + mathRandom + 'px' : '0px';
     imageElement.style.left = imageLeft;
-    imageElement.style.width = (Math.random() * (150 - 100) + 100) + 'px';
-    imageElement.style.top = (Math.random() * (80 - 5) + 5) + '%';
+    imageElement.style.width = (Math.random() * (250 - 200) + 200) + 'px';
+    imageElement.style.top = (Math.random() * (55 - 15) + 15) + '%';
 
     imageElement.classList.add('sliderImage');
     sliderListContainer.appendChild(imageElement);
@@ -313,7 +313,7 @@ function checkIfMarkerTouchImage() {
             // console.log('마커와 이미지가 닿았음');
             // console.log('이미지 파일 번호:', index + 1); // 이미지 번호는 0부터 시작하므로 +1 처리
             lastCollidedImage = image;
-            activeSlide.textContent = `${image.getAttribute('data-date')}`;
+            activeSlide.innerHTML = 'DATE.<br>' + image.getAttribute('data-date');
         }
     });
 }
@@ -339,8 +339,9 @@ sliderWrapper.addEventListener('wheel', (e) => {
     console.log('퍼센트 ' + scrollPercentage)
 
     if(scrollPercentage == 100) {
-        hidePage.style.clipPath = `circle(145% at 95% 3%)`
+        hidePage.style.clipPath = `circle(145% at 92% 8%)`
         hideWrapper.classList.add('active');
+        hidePage.style.background = `#121212`;
         setTimeout(() => {
             hideWrapper.classList.add('overflow');
             slider.classList.add('active');
@@ -349,7 +350,9 @@ sliderWrapper.addEventListener('wheel', (e) => {
         hideWrapper.addEventListener('wheel', (e) => {
             if(hideWrapper.scrollTop <= 0 && e.deltaY < 0) {
                 hideWrapper.classList.remove('overflow');
-                hidePage.style.clipPath = `circle(1% at 95% 3%)`
+                hidePage.style.clipPath = `circle(1% at 92% 8%)`;
+                hidePage.style.background = `#A54AFF`;
+                
                 slider.classList.remove('active');
                 setTimeout(() => {
                     hideWrapper.classList.remove('active');

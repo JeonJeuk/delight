@@ -86,7 +86,6 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    
 }
 
 section {
@@ -538,3 +537,57 @@ Typeface Style
     color: #fff;
 }
 
+/*---------------
+Syenrgy Style
+----------------*/
+.synergy {
+    width: 100%;
+    height: 100vh;
+}
+
+.synergy .synergyWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.synergy .synergyWrapper .synergyBanner {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.synergy .synergyWrapper .synergyBanner .synergyList {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.synergy .synergyWrapper .synergyBanner .synergyList li {
+    white-space: nowrap;
+    margin: 0 30px;
+}
+
+@keyframes flowRolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.synergy .synergyWrapper .synergyTitle {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
+
+.synergy .synergyWrapper .synergyTitle p {
+    width: 1050px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 160%;
+    color: #fff;
+}

@@ -169,3 +169,38 @@ typeface.forEach(element => {
 });
 
 
+
+
+
+window.addEventListener('load', function() {
+    setFlowBanner();
+});
+
+function setFlowBanner() {
+    const wrap = document.querySelector('.synergyBanner');
+    const list = document.querySelector('.synergyBanner .synergyList');
+    let wrapWidth = wrap.offsetWidth;
+    let listWidth = list.offsetWidth;
+    const speed = .3; // Set the number of pixels to move per second
+
+    // Clone the list
+    let clone = list.cloneNode(true);
+    wrap.appendChild(clone);
+    flowBannerAct();
+
+    function flowBannerAct() {
+        if (listWidth < wrapWidth) {
+            const listCount = Math.ceil(wrapWidth * 2 / listWidth);
+            for (let i = 2; i < listCount; i++) {
+                const newClone = clone.cloneNode(true);
+                wrap.appendChild(newClone);
+            }
+        }
+        const lists = wrap.querySelectorAll('.synergyList');
+        lists.forEach(item => {
+            item.style.animation = `${listWidth / speed / 1000}s linear infinite flowRolling`;
+        });
+    }
+}
+
+
