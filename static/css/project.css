@@ -1,0 +1,539 @@
+@font-face {
+    font-family: 'BangStart';
+    font-weight: 100;
+    src: url("/font/Bang-Start.woff2") format('woff2'), url("/fonts/Bang-Start.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    src: url("/fonts/Bang-Passion.woff2") format('woff2'), url("/fonts/Bang-Passion.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'BangExplode';
+    font-weight: 100;
+    src: url("/fonts/Bang-Explode.woff2") format('woff2'), url("/fonts/Bang-Explode.ttf") format('truetype');
+  }
+
+
+body{
+    background:#121212;
+    color:#fff;
+}
+
+
+
+/* ===== 프로젝트 리스트 =====  */
+.sectionList {
+    width: 70vw;
+    height: auto;
+    min-height: 1080px;
+}
+
+.sectionList .projectsList {
+    width: calc(100vw * 1800 / 1920);
+    margin-top: calc(100vw * 10 / 1920);
+    margin-left: calc(100vw * 100 / 1920);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sectionList .projectsList li {
+    margin-right: calc(100vw * 30 / 1920);
+    padding-bottom: calc(100vw * 150 / 1920);
+    overflow: hidden;
+}
+
+.sectionList .projectsList li .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: calc(100vw * 550 / 1920);
+    height: calc(100vw * 550 / 1920);
+}
+
+.sectionList .projectsList li .front, .projectsList li .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sectionList .projectsList li .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.sectionList .projectsList li .back {
+    transform: rotateY(180deg);
+}
+
+.sectionList .projectsList li:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.sectionList .projectsList .project_img {
+    width: calc(100vw * 550 / 1920);
+    
+}
+
+/* ===== projectList.js =====  */
+/* ===== 프로젝트 =====  */
+.name {
+    color: #000000;
+    font-family: 'Pretendard';
+    font-size: calc(100vw * 30 / 1920);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-top: calc(100vw * 30 / 1920);
+}
+
+.teamField{
+    margin-top: calc(100vw * 30 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    color:#fff;
+    opacity:0.5;
+    font-weight:400;
+}
+
+.projectDetail {
+    color: #fff;
+    font-weight:700;
+    font-size: calc(100vw * 30 / 1920);
+    font-family: 'Pretendard';
+    letter-spacing: -0.02em;
+    margin-top: calc(100vw * 12 / 1920);
+    width: calc(100vw * 550 / 1920);
+}
+
+.projectDetail .numCode{
+    margin-right: calc(100vw * 20 / 1920);
+}
+
+.projectDetail .teamName{
+    float:right;
+}
+
+/* ===== 사이트 맵 =====  */
+
+section.siteMap {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    display: inline-block;
+    padding-left: calc(100vw * 100 / 1920); 
+    padding-bottom: 2.2vw;
+    width: 100vw;
+    padding-top:calc(100vw * 100 / 1920);
+}
+
+section.siteMap .fieldList ul.fieldFilter {
+    display:flex;
+}
+
+section.siteMap .fieldList ul.fieldFilter li {
+    border:1px solid #fff;
+    border-radius: 1.88em;
+    font-size: calc(100vw * 20 / 1920);
+    display: flex;         
+    align-items: center;  
+    justify-content:center;
+    text-align:center;
+    margin: 1.75em 0.3em;
+    height: calc(100vw * 42 / 1920);
+
+    margin-bottom: calc(100vw * 40 / 1920);
+    cursor: pointer;
+}
+
+.teamColor:nth-child(1){
+    width: calc(100vw * 97 / 1920);
+}
+
+.teamColor:nth-child(2){
+    width: calc(100vw * 166 / 1920);
+}
+
+.teamColor:nth-child(3){
+    width: calc(100vw * 116 / 1920);
+}
+
+.teamColor:nth-child(4){
+    width: calc(100vw * 177 / 1920);
+}
+
+.teamColor:nth-child(5){
+    width: calc(100vw * 212 / 1920);
+}
+
+section.siteMap .allList {
+    display: inline;
+    align-self: flex-end;
+    max-width: calc(100vw * 1800 / 1920);
+}
+
+section.siteMap .allList ul.allListMenu {
+    display: grid;
+    grid-template-columns: 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr;
+    font-size: 1em;
+}
+section.siteMap .allList ul.allListMenu li {
+    float: left;
+    display: list-item;
+    margin-bottom: 0.9vw;
+    Letter-spacing: -0.05em;
+    font-size: calc(100vw * 18 / 1920);
+}
+
+section.siteMap .allList ul.allListMenu li span {
+    margin-right: calc(100vw * 20 / 1920);
+    width: calc(100vw * 25 / 1920);
+    display: inline-block;
+}
+
+.navActive {
+    opacity: 1 !important;
+}
+
+.color {
+    opacity: 0.4;
+    transition: all 0.3s ease-out;
+}
+
+/* ===== 상세 페이지 ===== */
+.projectPage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height:calc(100vw * 2350 / 1920);
+    background-color: #121212;
+    color:#fff;
+    display: none;
+    font-size: 0;
+    z-index: 1000;
+}
+
+.projectPage .deleteBtn {
+    position: absolute;
+    right: 76px;
+    margin-top: calc(100vw * 30 / 1920);
+    z-index: 300;
+}
+
+.projectPage .scrollBtn {
+    position: absolute;
+    right: calc(100vw * 950 / 1920);
+    margin-top: calc(100vw * 1000 / 1920);
+    z-index: 300;
+}
+
+.projectPage .textPart {
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ===== 프로젝트 소개 페이지 ===== */
+.mobileProject {
+    display: none;
+}
+
+.projectPage .textPart {
+    position: relative;
+    width:100%;
+    padding-left: calc(100vw * 100 / 1920);
+    padding-right: calc(100vw * 100 / 1920);
+    padding-bottom: calc(100vw * 100 / 1920);
+    right: 0;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #121212 100%);
+}
+
+.projectPage .textPart .projectTextBox {
+    max-width: calc(100vw * 780 / 1920);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: calc(100vh * 50 / 1920);
+    margin-top: calc(100vh * 1100 / 1920);
+    font-size: calc(100vw * 10 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectText1 {
+    font-size: calc(100vw * 20 / 1920);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin-top: calc(100vh * 50 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectText1 img {
+    vertical-align: middle;
+    margin-left: calc(100vw * 5 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectText2 {
+    font-size: calc(100vw * 50 / 1920);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.projectPage .textPart .projectTextBox .projectText3 {
+    font-size: calc(100vw * 18 / 1920);
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-top: calc(100vh * 15 / 1920);
+    margin-bottom: calc(100vh * 50 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectTextTeamMobile {
+    display: none;
+}
+
+.projectPage .textPart .projectTextBox ul.projectField {
+    margin-bottom: calc(100vh * 12 / 1920);
+    display: flex;
+    color: #A4A4A4;
+}
+
+.projectPage .textPart .projectTextBox li {
+    display: inline-block;
+    font-size: calc(100vw * 20 / 1920);
+    max-width: 745px;
+}
+
+.projectPage .textPart .projectTextBox li.projectLiFirst {
+    margin-right: 5px;
+    font-size: calc(100vw * 18 / 1920);
+}
+
+.projectPage .textPart .projectTextBox li.projectLiSecond {
+    font-size: calc(100vw * 18 / 1920);
+    font-weight: 500;
+}
+
+
+
+/* ===== 상세페이지 팀별 사진 ===== */
+
+.projectPage .memberImg{
+    position:absolute;
+    width:100%;
+    margin-top: calc(100vh * 1800 / 1920);
+    height:auto;
+}
+
+.memberImg .memberImgBox{
+    width:100%;
+    position:relative;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #121212 100%);
+}
+
+.memberImg ul.memberImgList {
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.memberImg ul.memberImgList li {
+    width: 20%;
+    text-align: center;
+    display:inline-block;
+    margin-right: calc(100vh * 270 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+
+.memberImg ul.memberImgList li img{
+    width: calc(100vh * 920 / 1920);
+    height: calc(100vh * 600 / 1920);
+    position:relative;
+    z-index:-1;
+}
+
+
+
+
+.bangButton{
+    width:100%;
+    position:absolute;
+    margin-top: calc(100vh * 2600 / 1920);
+    padding-bottom: calc(100vh * 300 / 1920);
+    text-align:center;
+}
+
+.bangButton button{
+    padding-left: 35px; 
+    padding-right: 35px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    border-radius: 75px; 
+    border: 1px white solid; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: "inline-flex";
+    color:#fff;
+    background:#121212;
+    font-size: calc(100vw * 24 / 1920);
+    font-family: 'BangExplode';
+}
+
+.memberBoxMobile {
+    display: none;
+}
+
+.blankMember {
+    display: none;
+}
+
+/* ===== 상세 페이지 이미지 ===== */
+
+.projectPage .imagePartMobile {
+    display: none;
+}
+
+.projectPage .imagePartMobile a {
+    display: none;
+}
+
+.mobileThumb {
+    display: none;
+}
+
+.mobileThumb img{
+    display: none;
+}
+
+.projectPage .imagePart {
+    box-sizing: border-box; 
+    display: inline-block; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: absolute; 
+}
+
+.projectPage .imagePart a {
+    display: block;
+}
+
+.projectPage .imagePart a .imgSize {
+    position: relative;
+}
+
+.projectPage .imagePart a .imgSize .firstDiv {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.projectPage .imagePart a .imgSize .firstDiv .firstImage {
+    z-index: 100;
+    overflow: hidden;
+    right: 0;
+    height: 100vh;
+    width:100vw;
+}
+
+.projectPage .imagePart a .imgSize .firstDiv .firstImage img {
+    position:absolute;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectPage .teamPart{
+    position:relative;
+    width:100%;
+    height:100vh;
+    height:auto;
+}
+
+.projectPage .teamPart .leftBox{
+    position:absolute;
+    float:left;
+    width:55%;
+    height:80vh;
+}
+
+.projectPage .teamPart .leftBox img{
+    width:90%;
+    position:absolute;
+    height:auto;
+    margin-top: calc(100vh * 300 / 1920);
+    margin-left: calc(100vh * 0 / 1920);
+}
+
+.projectPage .teamPart .leftBox .teamPhoto1{
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+}
+
+.projectPage .teamPart .leftBox .teamPhotoHover{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.projectPage .teamPart .leftBox:hover .teamPhoto1{
+    opacity: 0;
+}
+
+.projectPage .teamPart .leftBox:hover .teamPhotoHover{
+    opacity: 1;
+}
+
+.projectPage .teamPart .rightBox{
+    position:absolute;
+    right:0;
+    width:55%;
+    height:80vh;
+    color:#fff;
+}
+
+.projectPage .teamPart .rightBox img{
+    margin-top: calc(100vh * 300 / 1920);
+    margin-left: calc(100vh * 300 / 1920);
+    margin-left: calc(100vh * 100 / 1728);
+}
+
+
+
+
+
+
+
+/* ===== 반응형 ===== */
+@media  (max-width:768px) {
+    body {
+        overflow: scroll;
+        font-family: 'Pretendard', 'Montserrat';
+    }
+
+    header .webLogo{
+        display:none;
+    }
+
+    header {
+        display: block;
+    }
+    .sectionList {
+        width: 100vw;
+        height: 250vw;
+        position: relative;
+        top: 0;
+    }
+
+    /* ===== 사이트맵 ===== */
+    section.siteMap {
+        display: none;
+    }
+
+    
+}
+

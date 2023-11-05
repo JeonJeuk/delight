@@ -1,0 +1,36 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    margin:0;
+    padding:0;
+    background:#121212;
+}
+
+.curri {
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    box-sizing:border-box;
+}
+.curri img {
+    position: relative;
+    width: 100vw; 
+}
+
+.header-Btn li a{
+    color:#121212;
+}
+
+.btn_menu span {
+    background:#121212;
+}
+
+.content-overlay{
+    background:#fff;
+    color:#121212;
+}
+
+
+.content-overlay .nav-link a{
+    color:#121212;
+}

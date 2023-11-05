@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+    <html lang="ko">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bang!</title>
+        
+        <!-- meta -->
+        <meta name="author" content="김나은,박유현,박세현,홍지현,정주원,전제욱">
+        <meta name="description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회">
+        <meta name="keywords" content="DelightInsight13th, Bang, Kaywon, DigitalMedia">
+        <meta name="Resource-type" content="document">
+        <meta property="og:title" content="Bang">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+        <meta property="og:description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+        <meta name="twitter:card" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+        <meta name="twitter:title" content="Bang!">
+        <meta name="twitter:url" content="#">
+        <meta name="twitter:image" content="#">
+        <meta name="twitter:description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+    
+        <!-- favicon -->
+        <link rel="icon" href="image/favicon.png" sizes="30x30">
+        <link rel="apple-touch-icon-precomposed" href="image/favicon.png">
+    
+        <!-- JQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://unpkg.com/gsap@3.12.2/dist/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/curriculum.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+    </head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- 웹, 모바일 로고 -->
+        <div class="webLogo">
+            <div class="logoImages">
+                <img class="logoImage" src="/static/img/header/header_logo1.png" alt="passion">
+                <img class="logoImage" src="/static/img/header/header_logo2.png" alt="explosion">
+                <img class="logoImage" src="/static/img/header/header_logo3.png" alt="start">
+                <img class="logoImage" src="/static/img/header/header_logo1.png" alt="passion"> 
+            </div>
+        </div>
+        
+        <h1 class="mobileLogo"><a href="index.html"><img src="/static/img/header/header_logo1.png" alt="passion"></a></h1>
+
+        <!-- 메뉴 리스트 -->
+        <ul class="headerBtn">
+            <li class="menuItem"><a href="#">Story</a></li>
+            <li class="menuItem"><a href="/root/project/project.html">Project</a></li>
+            <li class="menuItem"><a href="/root/student/student.html">Student</a></li>
+        </ul>
+    
+        <!-- 토글 버튼 -->
+        <div id="toggle" class="btnMenu">
+
+        </div>
+
+        <!-- 스크롤탑 -->
+        <div class="topBtn"><img src="/static/img/student/icon/scrollTop.png" alt="scrollTop"></div>
+
+        <!-- 픽셀 -->
+        <div id="squareContainer"></div>
+
+        <!-- 메뉴 -->
+        <div class="contentOverlay">
+
+        <ul class="navLinks">
+            <li class="navLink">
+                <span>(01)</span>
+                <a href="/root/curriculum/curriculum.html">Curriculum</a>
+            </li>
+
+        <li class="navLink">
+                <span>(02)</span>
+                <a href="#">Story</a>
+        </li>
+
+        <li class="navLink">
+                <span>(03)</span>
+                <a href="/root/project/project.html">Projects</a>
+        </li>
+
+        <li class="navLink">
+                <span>(04)</span>
+                <a href="/root/student/student.html">Students</a>
+        </li>
+
+        <li class="navLink">
+                <span>(05)</span>
+                <a href="/root/credit/credit.html">Credit</a>
+        </li>
+    </ul>
+        </div>
+    </header>
+
+    <section class="curriWrap">
+        <div class="curri">
+            <img src="/static/img/curriculum/curriculum.jpg" alt="">
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div id="footer">
+        <div class="footerLeft">
+            <img src="/static/img/footer/footer_logo.png" alt="footerlogo">
+            <p>16038 경기도 의왕시 계원대학로 66(내손동)
+                계원예술대학교 디자인관 5층 디지털미디어디자인과
+            </p>
+            <ul class="footerSite">
+                <li><a href="https://www.kaywon.ac.kr/CmsHome/dep_03_02.aspx" target="_blank">
+                    <img src="/static/img/footer/cafe.png" alt="cafe"></a>
+                </li>
+                <li><a href="https://www.instagram.com/kw_dmd/" target="_blank">
+                    <img src="/static/img/footer/instagram.png" alt="instagram"></a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCvBHbAzqP_XkBv9FPxSp41A" target="_blank">
+                    <img src="/static/img/footer/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+    
+            <ul class="footerContact">
+                <li><span class="contactType">Tell</span><span class="contactDetail phone">031-424-7509</span></li>
+                <li><span class="contactType">Fax</span><span class="contactDetail fax">1899-5823</span></li>
+                <li><span class="contactType">E-MAIL</span><span class="contactDetail email">kaywon@kaywon.ac.kr</span></li>
+            </ul>
+            
+            
+        </div>
+        <div class="footerRight">
+            <p>66 Kaywondaehangno (Naeson-dong), Uiwang-si, Gyeonggi-do, Korea
+                Digital Media Design, Design Center 5F, Kaywon University
+            </p>
+    
+            <p>ⓒ 2023. Delight Insight Bang! All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="/static/js/header.js" type="text/javascript"></script>
+</body>
+</html>

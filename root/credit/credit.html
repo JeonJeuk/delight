@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+    <html lang="ko">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bang!</title>
+        
+        <!-- meta -->
+        <meta name="author" content="김나은,박유현,박세현,홍지현,정주원,전제욱">
+        <meta name="description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회">
+        <meta name="keywords" content="DelightInsight13th, Bang, Kaywon, DigitalMedia">
+        <meta name="Resource-type" content="document">
+        <meta property="og:title" content="Bang">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="#">
+        <meta property="og:description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+        <meta name="twitter:card" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+        <meta name="twitter:title" content="Bang!">
+        <meta name="twitter:url" content="#">
+        <meta name="twitter:image" content="#">
+        <meta name="twitter:description" content="2023 계원예술대학교 디지털미디어디자인과 졸업전시회 Bang!">
+    
+        <!-- favicon -->
+        <link rel="icon" href="image/favicon.png" sizes="30x30">
+        <link rel="apple-touch-icon-precomposed" href="image/favicon.png">
+    
+        <!-- JQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/credit.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+    </head>
+<body>
+    <header>
+        <!-- web, mobile logo -->
+        <div class="webLogo">
+            <div class="logo_images">
+                <img class="logo_image" src="image/header_logo1.png">
+                <img class="logo_image" src="image/header_logo2.png">
+                <img class="logo_image" src="image/header_logo3.png">
+                <img class="logo_image" src="image/header_logo1.png"> 
+            </div>
+        </div>
+        
+        <h1 class="m_logo"><a href="index.html"><img src="image/testLogo2.png"></a></h1>
+
+            <!-- header button -->
+            <ul class="header-Btn">
+                <li><button class="storyBtn"><a href="story.html">Story</a></button></li>
+                <li><button class="projectBtn"><a href="project.html">Project</a></button></li>
+                <li><button class="studentBtn"><a href="student.html">Student</a></button></li>
+            </ul>
+    
+            
+            <!-- toggle button -->
+            <div id="toggle" class="btn_menu">
+                    <span class="btn_hamburger_1"></span>
+                    <span class="btn_hamburger_2"></span>
+            </div>
+
+
+                <!-- blocks -->
+    <div id="square-container"></div>
+
+    <!-- menu -->
+    <div class="content-overlay">
+        <ul class="nav-links">
+            <li class="nav-link">
+                <span>(01)</span>
+                <a href="curriculum.html">Curriculum</a>
+            </li>
+    
+            <li class="nav-link">
+                <span>(02)</span>
+                <a href="story.html">Story</a>
+            </li>
+    
+            <li class="nav-link">
+                <span>(03)</span>
+                <a href="project.html">Projects</a>
+            </li>
+    
+            <li class="nav-link">
+                <span>(04)</span>
+                <a href="student.html">Students</a>
+            </li>
+    
+            <li class="nav-link">
+                <span>(05)</span>
+                <a href="credit.html">Credit</a>
+            </li>
+        </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="behindBgAll"></div>
+    </main>
+
+    <div class="memberList">
+        <h3>계원예술대학교 
+            디지털미디어디자인과 
+            2023 졸업전시회</h3>
+
+        <div id="display_container">
+            <div class="display_main">
+                <dl>
+                    <dt>위원장</dt>
+                    <dd>강희영</dd>
+                </dl>
+                <dl>
+                    <dt>총무</dt>
+                    <dd>노민정</dd>
+                </dl>
+                <dl>
+                    <dt>브랜딩팀</dt>
+                    <dd>전제욱 김나은 박세현 박유현 홍지현 정주원</dd>
+                </dl>
+                <dl>
+                    <dt>전시팀</dt>
+                    <dd>노민정 고유정 최의림 홍지현 김수연 김연우 노도희 손예찬 이화정 심민지</dd>
+                </dl>
+                <dl>
+                    <dt>홍보팀</dt>
+                    <dd>김나은 문자영 박유현 장지혁 이수빈 김연우 김정우 주재훈 최서빈</dd>
+                </dl>
+                <dl>
+                    <dt>영상팀</dt>
+                    <dd>박세현 김태연 문자영 박유현 조은빈 신유진 강서영 김지욱 남경륜 배솔민 손예찬 이나림 안희수</dd>
+                </dl>
+                <dl>
+                    <dt>하드웨어팀</dt>
+                    <dd>유진 정주원 나병호 우혁제 양유정 김이설 김민지 이재영</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="dmd_container">
+            <div class="dmd_left">
+                <dl>
+                    <dt>Bang!</dt>
+                    <dd>김나은 박세현 박유현 
+                        홍지현 정주원 전제욱</dd>
+                </dl>
+                <dl>
+                    <dt>니밈내밈</dt>
+                    <dd>진민희 신지원 장채은 
+                        허서아 김태연 김도연</dd>
+                </dl>
+                <dl>
+                    <dt>MOSS</dt>
+                    <dd>조용은 이동현 나현영 
+                        박유진 신윤재 이승헌</dd>
+                </dl>
+                <dl>
+                    <dt>운로</dt>
+                    <dd>조은빈 이사랑 문자영 
+                        박서빈 오나영 양유정</dd>
+                </dl>
+                <dl>
+                    <dt>미오</dt>
+                    <dd>장지혁 성아현 고유정 
+                        김시은 김정현 남수진</dd>
+                </dl>
+                <dl>
+                    <dt>스무디</dt>
+                    <dd>전윤언 정수민 이수빈 최지혁 임찬홍</dd>
+                </dl>
+                <dl>
+                    <dt>BOOSTER</dt>
+                    <dd>이인주 이재원 서예진 이정민</dd>
+                </dl>
+                <dl>
+                    <dt>얼씨고</dt>
+                    <dd>김수민 이서울 임준언 김태희 서지은 유진</dd>
+                </dl> 
+            </div>
+            <div class="dmd_right">
+                <dl>
+                    <dt>모닥불</dt>
+                    <dd>김정민 김다흰 정재영 진채윤 안서현 김민지</dd>
+                </dl>
+                <dl>
+                    <dt class="dmd_5">FRUV</dt>
+                    <dd>김유진 유예린 곽유빈 추예은 이지영</dd>
+                </dl>
+                <dl>
+                    <dt class="dmd_5">사과나무</dt>
+                    <dd>채예나 배인영 박민영 도희승 최서영</dd>
+                </dl>
+                <dl>
+                    <dt>STOVER</dt>
+                    <dd>성윤지 정서현 정현지 정기주 정서정 박민영</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="video_container">
+            <dl>
+                <dt>Beyond The Blue Dot</dt>
+                <dd>유성진 최의림 박재승</dd>
+            </dl>
+        </div>
+
+        <div id="new_container">
+            <dl>
+                <dt>노캔히어로</dt>
+                <dd>박지영 장나영 김소정 이주원 노민정 이성우 이유진</dd>
+            </dl>
+            <dl>
+                <dt>학도(學徒)</dt>
+                <dd>정민영 김지섭 모경훈 박재민 나병호 우혁제 김태연</dd>
+            </dl>
+            <dl>
+                <dt class="new_5">InPrism</dt>
+                <dd>고주현 오민아 강희영 김이설 추혜화</dd>
+            </dl>
+            <dl>
+                <dt class="new_5">Timeout</dt>
+                <dd>김민석 신민우 권도희 조서윤 장정은</dd>
+            </dl>
+        </div>
+        </div>
+
+
+        <footer>
+            <div id="footer">
+            <div class="footerLeft">
+                <img src="/static/img/footer/footer_logo.png" alt="footerlogo">
+                <p>16038 경기도 의왕시 계원대학로 66(내손동)
+                    계원예술대학교 디자인관 5층 디지털미디어디자인과
+                </p>
+                <ul class="footerSite">
+                    <li><a href="https://www.kaywon.ac.kr/CmsHome/dep_03_02.aspx" target="_blank">
+                        <img src="/static/img/footer/cafe.png" alt="cafe"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/kw_dmd/" target="_blank">
+                        <img src="/static/img/footer/instagram.png" alt="instagram"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCvBHbAzqP_XkBv9FPxSp41A" target="_blank">
+                        <img src="/static/img/footer/youtube.png" alt="youtube"></a>
+                    </li>
+                </ul>
+        
+                <ul class="footerContact">
+                    <li><span class="contactType">Tell</span><span class="contactDetail phone">031-424-7509</span></li>
+                    <li><span class="contactType">Fax</span><span class="contactDetail fax">1899-5823</span></li>
+                    <li><span class="contactType">E-MAIL</span><span class="contactDetail email">kaywon@kaywon.ac.kr</span></li>
+                </ul>
+                
+                
+            </div>
+            <div class="footerRight">
+                <p>66 Kaywondaehangno (Naeson-dong), Uiwang-si, Gyeonggi-do, Korea
+                    Digital Media Design, Design Center 5F, Kaywon University
+                </p>
+        
+                <p>ⓒ 2023. Delight Insight Bang! All Rights Reserved.</p>
+            </div>
+            </div>
+        </footer>
+
+
+
+
+    <script src="/static/js/header.js" type="text/javascript"></script>
+    <!-- <script src="/js/credit.js" type="text/javascript"></script> -->
+</body>
+</html>

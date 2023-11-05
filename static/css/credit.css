@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background:#121212;
+    color:#fff;
+}
+
+
+footer {
+    color:#fff;
+    position:relative;
+    margin-top:150%;
+}
+
+.behindBgAll {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.behindBgAll .behindImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(.4);
+    z-index: -100;
+}
+
+
+.memberList {
+    position: absolute;
+    top: calc(100vw * 300 / 1920);
+    width: calc(100vw * 1404 / 1920);
+    margin: 0 calc(100vw * 250 / 1920);
+    color: #fff;
+    font-size: calc(100vw * 20 / 1920);
+    font-family: 'Pretendard','Montserrat';
+    z-index: 1;
+}
+
+.memberList h3 {
+    white-space: pre-line;
+    line-height: 130%;
+    font-size: calc(100vw * 50 / 1920);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    margin-top: calc(100vw * 30 / 1920);
+    text-align:right;
+    font-weight:500;
+    
+}
+
+.memberList dl {
+    display: flex;
+    margin-bottom: calc(100vw * 30 / 1920);
+    line-height: 150%;
+    
+}
+
+.memberList dl dt {
+    width: calc(100vw * 90 / 1920);
+    padding-right: calc(100vw * 130 / 1920);
+    font-weight: 600;
+    white-space: pre-line;
+    
+}
+
+.memberList dl dd {
+    word-spacing: calc(100vw * 10 / 1920);
+}
+
+
+
+
+/* 다른섹션 */
+
+/* ------ 졸준위 */
+#display_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+#display_container dl dd {
+    width: calc(100vw * 400 / 1920);
+    word-break: keep-all;
+}
+
+
+
+/* ------ 디미디 */
+#dmd_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: calc(100vw * 150 / 1920);
+    /* background:pink; */
+}
+
+
+#dmd_container .dmd_right {
+    margin-top: calc(100vw * 497 / 1920);
+}
+
+#dmd_container .dmd_right dt {
+    width: calc(100vw * 160 / 1920);
+}
+
+#dmd_container .dmd_5{
+    margin-right: calc(100vw * 65 / 1920);
+ }
+
+/* ---- 영상 */
+#video_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: calc(100vw * 150 / 1920);
+}
+
+
+
+/* ---- 뉴미디어 */
+#new_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    margin-top: calc(100vw * 150 / 1920);
+}
+
+
+#new_container dl dt {
+    width: calc(100vw * 90 / 1920);
+}
+
+#new_container .new_5{
+   margin-right: calc(100vw * 135 / 1920);
+}
+
+
+
+@media (max-width: 768px) {
+    .memberList h3 {
+        margin-top: calc(100vw * 30 / 768); 
+    }
+
+    .memberList dl {
+        margin-bottom: calc(100vw * 30 / 768);
+        text-align:left;
+    }    
+
+    .memberList dl dt {
+        width: calc(100vw * 120 / 768);
+        padding-right: calc(100vw * 50 / 768);
+    }
+
+    #dmd_container {
+        margin-top: calc(100vw * 100 / 768);
+    }
+    
+
+    #display_container dl dd {
+        width: calc(100vw * 350 / 768);
+        word-break: keep-all;
+    }
+
+    #dmd_container .dmd_right {
+        margin-top: calc(100vw * 700 / 768);
+    }
+
+    #dmd_container .dmd_left dd {
+        width: calc(100vw * 140 / 768);
+    }
+
+    #dmd_container .dmd_right dt {
+        width: calc(100vw * 140 / 768);
+    }
+
+    #video_container dl dt {
+        width: calc(100vw * 90 / 768);
+    }
+
+    #new_container dl dt {
+        width: calc(100vw * 90 / 768);
+    }
+
+    #new_container .new_5{
+        margin-right: calc(100vw * 95 / 768);
+    }
+    
+    footer {
+        filter: invert(100%);
+        position:relative;
+        margin-top:300%;
+    }
+
+}

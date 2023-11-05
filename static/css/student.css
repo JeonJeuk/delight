@@ -1,0 +1,516 @@
+body{
+  background:#121212;
+  color:#fff;
+}
+
+.titleArea {
+  position:relative;
+  width: calc(100vw * 600 / 1920);
+  font-size: calc(100vw * 30 / 1920);
+  letter-spacing :2.5px;
+  margin-left: calc(100vw * 100 / 1920);
+  margin-top:calc(100vw * 300 / 1920);
+}
+
+.title {
+  position:absolute;
+  width: calc(100vw * 600 / 1920);
+  font-size: calc(100vw * 30 / 1920);
+  letter-spacing :2.5px;
+}
+
+/* search */
+.searchWrap {
+  position:absolute;
+  width: calc(100vw * 200 / 1920);
+  margin-left: calc(100vw * 1510 / 1920);
+  margin-top: calc(100vw * -20 / 1920);
+  z-index:5;
+}
+
+.search{
+  border-bottom: solid 1.5px #fff;
+}
+
+input {
+  width:80%;
+  font-family: 'Pretendard';
+  font-size: calc(100vw * 18 / 1920);
+  border: none;
+  background: none;
+  padding:12px 0;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+.buttons {
+  width: 2rem;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+button>img.buttonImg {
+  width: 100%;
+  /* cursor:pointer; */
+  margin-left: calc(100vw * 10 / 1920);
+  margin-top: calc(100vw * 5 / 1920);
+}
+
+
+.detailWrap {
+  position:absolute;
+  width: calc(100vw * 500 / 1920);
+  margin-left: calc(100vw * 1080 / 1920);
+  z-index:5;
+  text-align:right;
+}
+
+
+.detailWrap li {
+  display: inline-block;
+  font-size: calc(100vw * 24 / 1920);
+  margin-right: 5.5%;
+  padding-bottom: 5px;
+  /* cursor: pointer; */
+}
+
+.sideActive {
+  border-bottom: 3px #fff solid;
+}
+
+
+
+/* 프로필 사진 */
+
+.sectionList {
+  width: 70vw;
+  height: auto;
+  min-height: 1080px;
+  padding-top: calc(100vw * 100 / 1920);
+}
+
+
+
+.studentList {
+  width: calc(100vw * 1800 / 1920);
+  margin-top: calc(100vw * 10 / 1920);
+  margin-left: calc(100vw * 100 / 1920);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+.studentList li {
+  margin-right: calc(100vw * 40 / 1920);
+  padding-bottom: calc(100vw * 150 / 1920);
+  overflow: hidden;
+}
+
+
+
+.studentList li img {
+  width: calc(100vw * 310 / 1920);
+
+}
+
+
+
+.studentList li img:hover {
+  transition: all 0.8s;
+  transform: scale(105%);
+}
+
+
+
+.name {
+  color: #fff;
+  font-family: 'Pretendard';
+  font-size: calc(100vw * 30 / 1920);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-top: calc(100vw * 30 / 1920);
+}
+
+
+
+.projectDetail {
+  color: #fff;
+  font-size: calc(100vw * 20 / 1920);
+  font-family: 'Pretendard';
+  letter-spacing: -0.02em;
+  margin-top: calc(100vw * 12 / 1920);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .titleArea {
+    width:100%;
+    margin-left: calc(100vw * 100 / 768);
+  }
+
+  .title {
+    width:100%;
+    font-size: calc(100vw * 30 / 768);
+    margin-top: calc(100vw * -100 / 768);
+  }
+
+  .studentList {
+    width: 90vw;
+    margin-top: 100px;
+    margin-left: calc(100vw * 45 / 768);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .studentList li {
+    margin-left: calc(100vw * 32/ 1920);
+    padding-bottom: calc(100vw * 150 / 1920);
+    overflow: hidden;
+  }
+
+
+
+  .studentList li img {
+    width: calc(100vw * 750 / 1920);
+
+  }
+
+
+  .name {
+    font-size: calc(100vw * 30 / 768);
+  }
+
+
+
+  .projectDetail {
+    font-size: calc(100vw * 20 / 768);
+  }
+
+
+
+  /* 검색영역 */
+
+  main {
+    margin: 0 calc(100vw * 40 / 768);
+    overflow-x: hidden;
+  }
+
+
+
+  .searchWrap {
+    width: 81.5vw;
+    left: calc(100vw * -650 / 768);
+    top: calc(100vw * 90 / 768);
+  }
+
+
+
+  input {
+    width: 90%;
+    height: calc(100vw * 60 / 768);
+    font-size: calc(100vw * 28.5 / 768);
+    color:#fff;
+  }
+
+
+
+  .detailWrap {
+    width: 100%;
+    height: calc(100vw * 90 / 768);
+    font-size: calc(100vw * 28.5 / 768);
+    margin-left: 0;
+  }
+
+
+  .detailWrap ul{
+    display:flex;
+  }
+
+
+.detailWrap li {
+    height: 1.8em;
+    width: 6em;
+    font-size: 0.9em; 
+    margin: 0.5em 0.5em;
+    background:transparent;
+    text-align:center;
+    /* cursor:pointer; */
+} 
+
+button>img.buttonImg {
+  margin-top:calc(100vw * 10 / 768);
+  margin-left:calc(100vw * 15 / 768);
+}
+
+.sideActive {
+  border-bottom:none;
+}
+
+}
+
+
+/* ===== 상세 페이지 ===== */
+.projectPage {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #202020;
+  display: none;
+  font-size: 0;
+  z-index: 1500;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.projectPage .deleteBtn {
+  position: absolute;
+  right: 76px;
+  margin-top: calc(100vw * 30 / 1920);
+  z-index: 300;
+}
+
+.projectPage .textPart {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 프로젝트 소개 페이지 */
+.mobileProject {
+  display: none;
+}
+
+.projectPage .textPart {
+  max-width: calc(100vw * 1000 / 1920);
+  padding-left: calc(100vw * 100 / 1920);
+  padding-right: calc(100vw * 100 / 1920);
+  position: absolute;
+  padding-bottom: calc(100vw * 100 / 1920);
+  right: 0;
+  z-index: 130;
+  background: #202020;
+}
+
+.projectPage .textPart .projectTextBox {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: calc(100vh - 200px);
+  right: 0px;
+  font-size: calc(100vw * 10 / 1920);
+  margin-top: calc(100vh * 80 / 1080);
+  padding-bottom: calc(100vh * 60 / 1080);
+  
+}
+
+
+.projectPage .textPart .projectTextBox .projectText2 {
+  font-size: calc(100vw * 80 / 1920);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top:calc(100vw * 200 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectText2 span {
+  font-size: calc(100vw * 25 / 1920);
+  color: #A4A4A4;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.projectPage .textPart .projectTextBox .projectText3 {
+  font-size: calc(100vw * 18 / 1920);
+  line-height: 150%;
+  margin-top: calc(100vh * 50 / 1080);
+  margin-bottom: calc(100vh * 40 / 1080);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  box-sizing:border-box;
+}
+
+.projectPage .textPart .projectTextBox .projectText3 img{
+  max-width: calc(100vw * 700 / 1920);
+}
+
+.projectPage .textPart .projectTextBox .projectTextTeamMobile {
+  display: none;
+}
+
+
+.projectPage .textPart .projectTextBox .projectField {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.projectPage .textPart .projectTextBox ul.projectField {
+  margin-top: calc(100vh * 30 / 1080);
+  color: #A4A4A4;
+
+}
+
+.projectPage .textPart .projectTextBox li {
+  font-size: calc(100vw * 20 / 1920);
+  max-width: 745px;
+}
+
+.projectPage .textPart .projectTextBox li.projectLiFirst {
+  font-size: calc(100vw * 18 / 1920);
+  margin-right: 20px;
+  width: 100px;
+}
+
+.projectPage .textPart .projectTextBox li.projectLiSecond {
+  font-size: calc(100vw * 18 / 1920);
+  font-weight: 500;
+  color:#fff;
+}
+
+
+.projectPage .textPart .projectTextBox .detailbg2{
+  position:absolute;
+  margin-top: calc(100vh * -80 / 1080);
+  z-index:-10;
+}
+
+
+
+.memberBoxMobile {
+  display: none;
+}
+
+.blankMember {
+  display: none;
+}
+
+/* 이미지 */
+
+.projectPage .imagePartMobile {
+  display: none;
+}
+.projectPage .imagePartMobile a {
+  display: none;
+}
+.mobileThumb {
+  display: none;
+}
+.mobileThumb img{
+  display: none;
+}
+.projectPage .imagePart {
+  z-index: 19;
+}
+.projectPage .imagePart a {
+  display: block;
+}
+.projectPage .imagePart a .imgSize {
+  position: relative;
+}
+.projectPage .imagePart a .imgSize .firstDiv {
+  position: absolute;
+  top: 0;
+  right: -148%;
+  bottom: 0;
+  left: -200%;
+  text-align: center;
+}
+.projectPage .imagePart a .imgSize .firstDiv .firstImage {
+  z-index: 100;
+  overflow: hidden;
+  right: 0;
+  height: 50vh;
+  margin-top: calc(100vh * 400 / 1920);
+  margin-left: calc(100vh * 500 / 1920);
+  box-sizing: border-box;
+}
+.projectPage .imagePart a .imgSize .firstDiv .firstImage img {
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.projectPage .imagePart a .imgSize .bgDiv{
+  position:absolute;
+}
+
+.projectPage .imagePart a .imgSize .bgDiv .detailbg1{
+  height: 100%;
+  margin-top: calc(100vh * 1100 / 1920);
+}
+
+.textaniWrapper {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+  margin-top:calc(100vw * 900 / 1920);
+  display: flex;
+  box-sizing: border-box;
+  z-index:135;
+}
+
+.textani {
+  width: calc(100vw * 554 / 1920);
+  height: calc(100vw * 44 / 1920);
+  flex: 1;
+  right: 0;
+  animation: slide-left 7s linear infinite;
+  margin-top:calc(100vw * 20 / 1920);
+}
+
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+
+.textaniWrapper.planner{
+  background-color: #FF1345;
+}
+
+.textaniWrapper.designer {
+  background-color: #A54AFF;
+}
+
+.textaniWrapper.programmer {
+  background-color: #0AA7FF;
+}
+

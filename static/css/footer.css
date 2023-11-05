@@ -1,0 +1,178 @@
+/* 푸터 */
+footer {
+    bottom:0;
+    height: calc(100vw * 280 / 1920);
+    padding: 0 calc(100vw * 100 / 1920) !important;
+    background:#121212;
+    color:#fff;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Montserrat", "Pretendard";
+    font-weight: 500;
+    line-height: 130%;
+    padding: calc(100vw * 50 / 1920) 0;
+    border-top: solid calc(100vw * 1 / 1920) #fff;
+}
+
+.footerLeft {
+  width: calc(100vw * 750 / 1920);
+  height:auto;
+  font-size: calc(100vw * 16/ 1920);
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  display:flex; 
+  flex-wrap : wrap; 
+  align-items:flex-start;
+  position:relative;
+}
+
+.footerLeft img {
+    width: calc(100vw * 118 / 1920);
+    height:auto;
+    margin-bottom: calc(100vw * 20 / 1920);
+    order:-1; 
+}
+
+.footerLeft p:nth-of-type(1) {
+    margin-left: calc(100vw * 140 / 1920);
+    order:-1;
+    white-space: pre-line;
+}
+.footerLeft .footerSite{
+    margin-left: calc(100vw * 245 / 1920);
+    margin-top: calc(100vw * 10 / 1920);
+}
+
+.footerLeft .footerSite li {
+    display: inline;
+}
+
+.footerLeft .footerSite img {
+    width: calc(100vw * 30 / 1920);
+    margin-left: calc(100vw * 10 / 1920);
+}
+
+
+.footerLeft .footerContact {
+  margin-left: calc(100vw * 50 / 1920);
+  margin-top: calc(100vw * 8 / 1920);
+}
+
+.footerLeft .footerContact li {
+  margin-left: calc(100vw * 10 / 1920);
+  margin-top: calc(100vw * 5 / 1920);
+  display: flex;
+}
+
+.footerLeft .footerContact .contactType {
+  margin-right: 1em; 
+}
+
+.footerLeft .footerContact .phone, .footerLeft .footerContact .fax {
+  margin-left: 2em; 
+}
+
+.footerLeft .footerContact .email {
+  margin-left: 0.4em; 
+}
+
+
+
+
+
+
+
+.footerLeft ul:nth-child(1) {
+    display: inline-block;
+}
+
+.footerLeft ul:nth-child(2) {
+    display: inline-block;
+}
+
+
+.footerRight {
+    width: calc(100vw * 750 / 1920);
+    height:13vh;
+    font-size: calc(100vw * 16/ 1920);
+    align-items:flex-end;
+}
+
+.footerRight p:nth-child(1){
+    text-align:left;
+    white-space: pre-line;
+}
+
+.footerRight p:nth-child(2){
+  text-align:left;
+    margin-top: calc(100vw * 60 / 1920);
+}
+
+@media (max-width: 768px) {
+    /* 푸터 */
+  footer {
+    height: calc(100vw * 260 / 768);
+    padding: calc(100vw * 60 / 768) calc(100vw * 40 / 768);
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerLeft img {
+    width: calc(100vw * 184 / 768);
+    margin-bottom: calc(100vw * 40 / 768);
+  }
+
+  .footerLeft p {
+    display: none;
+  }
+
+  .footerRight p:nth-child(1) {
+    display:none;
+  }
+
+  .footerRight p:nth-child(2){
+    width: calc(100vw * 500 / 768);
+    margin-top: calc(100vw * 80 / 768);
+  }
+
+
+  .footerLeft .footerSite {
+    display: flex;
+    margin-left: calc(100vw * 450 / 768);
+    margin-bottom: calc(100vw * -200 / 768);
+  }
+
+  .footerLeft .footerSite li {
+    margin-right: calc(100vw * 20 / 768);
+  }
+
+
+  .footerLeft  .footerSite img {
+    width: calc(100vw * 50 / 768);
+  }
+
+  .footerLeft .footerContact{
+    margin-top: 0;
+    width: calc(100vw * 415 / 768);
+    font-size: calc(100vw * 15 / 768);
+    line-height: 130%;
+    margin-left: 0;
+  }
+
+  .footerLeft .footerContact ul:nth-child(1) {
+    width: calc(100vw * 90 / 768);
+  }
+
+  .footerLeft .footerContact ul:nth-child(2) {
+    width: calc(100vw * 280 / 768);
+  }
+
+  
+}

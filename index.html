@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./static/css/normalize.css">
     <link rel="stylesheet" href="./static/css/nav.css">
     <link rel="stylesheet" href="./static/css/index.css">
+
+    <style>
+        .lottieAnimation {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -27,7 +34,7 @@
     <section class="main">
         <div class="mainWrapper">
             <div class="mainInterac">
-                <img src="./static/img/index/main.svg" alt="mainInterac" style="width: 100%;">
+                <div id="lottieAnimation"></div>
             </div>
             <div class="mainTitle">
                 <div class="title">
@@ -1207,6 +1214,17 @@
             <div class="typefaceStart"></div>
         </div>
     </section>
+    <section class="fontInput">
+        <div class="fontInputWrapper">
+            <input type="text" id="textInput">
+            <div class="fontBox">
+                <div class="Passionfont box" id="passionBox"></div>
+                <div class="Explosionfont box" id="explosionBox"></div>
+                <div class="Startfont box" id="startBox"></div>
+            </div>
+        </div>
+    </section>
+
     <section class="synergy">
         <div class="synergyWrapper">
             <div class="synergyTitle">
@@ -1225,9 +1243,40 @@
             </div>
         </div>
     </section>
-    <section></section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script src="./static/js/index.js"></script>
     <script src="./static/js/indexSlider.js"></script>
+
+    <script>
+        
+        function loadLottieAnimation() {
+            const animationContainer = document.getElementById('lottieAnimation');
+            const animData = {
+                container: animationContainer,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './static/json/BANG!_mainpattern.json' // 실제 JSON 파일의 경로
+            };
+
+            // Lottie 애니메이션 로드
+            const anim = lottie.loadAnimation(animData);
+
+            // 호버 이벤트 처리
+            animationContainer.addEventListener('mouseenter', () => {
+                anim.play(); // 마우스 호버 시 애니메이션 재생
+            });
+
+            // animationContainer.addEventListener('mouseleave', () => {
+            //     anim.stop(); // 마우스가 호버 영역을 벗어나면 애니메이션 정지
+            // });
+        }
+
+        // 페이지가 로드되면 애니메이션 로드 함수 호출
+        document.addEventListener('DOMContentLoaded', loadLottieAnimation);
+
+        console.log(animationContainer);
+    </script>
 </body>
-</html>
+</html>`

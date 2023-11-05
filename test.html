@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fontInput {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .fontInputWrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="fontInput">
+        <div class="fontInputWrapper">
+            <input type="text" id="textInput">
+            <div class="Passionfont box" id="passionBox"></div>
+            <div class="Explosionfont box" id="explosionBox"></div>
+            <div class="Startfont box" id="startBox"></div>
+        </div>
+    </section>
+
+    <script>
+        const inputElement = document.getElementById('textInput');
+        const passionBox = document.getElementById('passionBox');
+        const explosionBox = document.getElementById('explosionBox');
+        const startBox = document.getElementById('startBox');
+
+        inputElement.addEventListener('input', function(event) {
+            const inputText = event.target.value;
+
+            passionBox.innerText = inputText;
+            explosionBox.innerText = inputText;
+            startBox.innerText = inputText;
+        });
+    </script>
+</body>
+</html>

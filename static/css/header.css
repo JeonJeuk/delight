@@ -1,0 +1,277 @@
+/* 초기값 설정 */
+
+a{
+    text-decoration:none;
+    background-blend-mode:difference;
+}
+
+a:link{
+    color:#fff;
+    background-blend-mode: difference;
+}
+
+a:visited{
+    color:#fff;
+    background-blend-mode: difference;
+}
+
+a:hover{
+    color:#fff;
+    background-blend-mode: difference;
+}
+
+a:active{
+    color:#fff;
+    background-blend-mode: difference;
+}
+
+ol,
+ul{
+    list-style:none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 */
+header {
+    top: 0;
+    height: 5.63em;
+    width: 100vw;
+    position: fixed;
+    z-index:1000;
+    background:transparent;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* 로고 */
+header .webLogo {
+    width: calc(100vw * 183 / 1920);
+    height: calc(100vw * 42 / 1920);
+    position: absolute;
+    box-sizing: border-box;
+    top:0;
+    padding: 0;
+    margin: 1.2em 2em;
+    background: transparent;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-left: calc(100vw * 100 / 1920)!important;
+}
+
+header .webLogo img {
+    width: calc(100vw * 129 / 1920);
+    cursor: pointer;
+    position: absolute; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+header .webLogo img:first-child {
+    opacity: 1;
+}
+
+header .mobileLogo{
+    display: none;
+}
+
+/* 헤더 버튼 */
+.headerBtn {
+    position: absolute;
+    right:13%;
+    top: 0;
+    font-size: calc(100vw * 22 / 1920);
+}
+
+.menuItem {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 2em 1.5em;
+}
+
+.menuItem a{
+    height: 2.13em;
+    width: 6em;
+    font-size: 1.2em;
+    padding: 0;
+    align-items: center; 
+    justify-content: flex-start; 
+    background:transparent;
+    cursor:pointer;
+}
+
+header #toggle {
+    position: fixed;
+    top: 1.8em;
+    right: 3em;
+    transform: translate(0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    width: 80px;
+    height: 45px;
+}
+
+header .btnMenu {
+    position: relative;
+    height: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    z-index: 100;
+    margin-right: calc(100vw * 40 / 1920)!important;
+}
+
+/* header .btnMenu svg{
+    margin-top: calc(100vw * 20 / 1920);
+} */
+
+/* 오버레이 메뉴 */
+header #squareContainer{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow:hidden;
+    z-index:10000;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+header .square{
+    width:75px;
+    height:75px;
+    box-sizing:border-box;
+    z-index:1;
+    pointer-events: none;
+}
+
+header .contentOverlay{
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0em;
+    background:#121212;
+    color:#ffffff;
+    z-index:-1;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .contentOverlay .navLink{
+    display:flex;
+    font-family: 'Pretendard';
+    font-weight:600;
+    padding: 0.5em 0 0 0;
+    font-size: calc(100vw * 60 / 1920);
+}
+
+header .contentOverlay .navLink span{
+    position:relative;
+    top:0.3em;
+    
+}
+
+header .contentOverlay .navLink a{
+    padding: 0 1em;
+    font-size:2em;
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: uppercase;
+    pointer-events: auto;
+    font-family: 'Pretendard';
+    font-weight:500;
+}
+
+/* ===== 스크롤탑 =====  */
+.topBtn{
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    border-radius: 50px;
+    width:50px;
+    height:50px;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/******  Web 헤더 끝 ******/
+
+
+
+
+
+/******  모바일 헤더 ******/
+@media (max-width: 768px) {
+    header{
+        position: relative;
+        height: calc(100vw * 178 / 768);
+    }
+
+    header .webLogo{
+        display: none;
+    }
+
+    header .mobileLogo{
+        position: absolute;
+        width: calc(100vw * 129 / 768); 
+        height: auto;
+        display: block;
+    }
+
+    header .mobileLogo img {
+        width: calc(100vw * 129 / 768);
+        margin: 1.75em 2em; 
+    }
+
+    header .contentOverlay .navLink{
+        padding: 2em 0 0 0;
+        font-size: calc(100vw * 32 / 768);
+    }
+
+    header .headerBtn {
+        position: absolute;
+        right:27%;
+        top: 0;
+    }
+    
+    header .headerBtn li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    header .headerBtn .menuItem {
+        height: 2.13em;
+        width: 5em;
+        font-family: 'Pretendard';
+        font-size: 1.5em;
+        margin: 4.5em 0.3em;
+        padding: 0;
+        align-items: center; 
+        justify-content: flex-start; 
+        background:transparent;
+    }
+
+    header #toggle{
+        margin-top:calc(100vw * 15 / 768); 
+    }
+
+}
+
