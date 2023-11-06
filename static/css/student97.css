@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'BangStart';
   font-weight: 100;
-  src: url("./font/Bang-Start.woff2") format('woff2'), url("./fonts/Bang-Start.ttf") format('truetype');
+  src: url("/font/Bang-Start.woff2") format('woff2'), url("/fonts/Bang-Start.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'BangPassion';
   font-weight: 100;
-  src: url("./fonts/Bang-Passion.woff2") format('woff2'), url("./fonts/Bang-Passion.ttf") format('truetype');
+  src: url("/fonts/Bang-Passion.woff2") format('woff2'), url("/fonts/Bang-Passion.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'BangExplode';
   font-weight: 100;
-  src: url("./fonts/Bang-Explode.woff2") format('woff2'), url("./fonts/Bang-Explode.ttf") format('truetype');
+  src: url("/fonts/Bang-Explode.woff2") format('woff2'), url("/fonts/Bang-Explode.ttf") format('truetype');
 }
 
 
