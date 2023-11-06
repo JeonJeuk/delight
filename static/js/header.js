@@ -44,7 +44,7 @@ document.getElementById('toggle').addEventListener('click', function() {
         gsap.set(menu, {opacity : 0});
 
         const squareContainer = document.getElementById("squareContainer");
-        const squareSize = 75;
+        const squareSize = 80;
         const screenWidth = window.innerWidth;
         const screenHeight = window.innerHeight;
         const numCols = Math.ceil(screenWidth / squareSize);
@@ -131,16 +131,28 @@ document.getElementById('toggle').addEventListener('click', function() {
         });
     });
 
-    var images = document.querySelectorAll(".webLogo img");
+    var headerimages = document.querySelectorAll(".webLogo img");
     var i = 0;
     
     function changeImage() {
-        images[i].style.opacity = "0";
-        i = (i + 1) % images.length;
-        images[i].style.opacity = "1";
+        headerimages[i].style.opacity = "0";
+        i = (i + 1) % headerimages.length;
+        headerimages[i].style.opacity = "1";
     }
     
     // 2초마다 이미지를 바꿈
     setInterval(changeImage, 2000);
 
+
+
+    $(document).ready(function(){
+        $(".accessMenu").hover(function(){
+            // 마우스가 요소 위에 있을 때 실행되는 함수
+            $(this).find(".accessSubmenu").stop().slideDown(300);
+        }, function(){
+            // 마우스가 요소 바깥으로 나갔을 때 실행되는 함수
+            $(this).find(".accessSubmenu").stop().slideUp(300);
+        });
+    });
+    
 

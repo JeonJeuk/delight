@@ -49,6 +49,7 @@
 
 <body>
     <!-- header -->
+    <!-- header -->
     <header>
         <!-- 웹, 모바일 로고 -->
         <div class="webLogo">
@@ -56,21 +57,32 @@
                 <img class="logoImage" src="/static/img/header/header_logo1.png" alt="passion">
                 <img class="logoImage" src="/static/img/header/header_logo2.png" alt="explosion">
                 <img class="logoImage" src="/static/img/header/header_logo3.png" alt="start">
-                <img class="logoImage" src="/static/img/header/header_logo1.png" alt="passion">
+                <img class="logoImage" src="/static/img/header/header_logo1.png" alt="passion"> 
             </div>
         </div>
+        
+        <h1 class="mobileLogo"><a href="index.html"><img src="/static/img/header/header_logo1.png" alt="passion"></a></h1>
 
         <!-- 메뉴 리스트 -->
         <ul class="headerBtn">
-            <li class="menuItem"><a href="#">Story</a></li>
+            <li class="menuItem accessMenu"><a href="#">Story</a>
+                <ul class="accessSubmenu">
+					<li><img src="/static/img/header/passion_icon.png"><a href="/root/story/passion/passionWeek1.html">PASSION</a></li>
+					<li><img src="/static/img/header/explode_icon.png"><a href="/root/story/explosion/explosion.html">EXPLODE</a></li>
+					<li><img src="/static/img/header/start_icon.png"><a href="/root/story/start/student97.html">START</a></li>
+				</ul>
+            </li>
             <li class="menuItem"><a href="/root/project/project.html">Project</a></li>
             <li class="menuItem"><a href="/root/student/student.html">Student</a></li>
         </ul>
-
+    
         <!-- 토글 버튼 -->
         <div id="toggle" class="btnMenu">
 
         </div>
+
+        <!-- 스크롤탑 -->
+        <!-- <div class="topBtn"><img src="/static/img/student/icon/scrollTop.png" alt="scrollTop"></div> -->
 
         <!-- 픽셀 -->
         <div id="squareContainer"></div>
@@ -78,32 +90,46 @@
         <!-- 메뉴 -->
         <div class="contentOverlay">
 
-            <ul class="navLinks">
-                <li class="navLink">
-                    <span>(01)</span>
-                    <a href="/root/curriculum/curriculum.html">Curriculum</a>
-                </li>
 
-                <li class="navLink">
-                    <span>(02)</span>
-                    <a href="#">Story</a>
-                </li>
+<div class="navContainer">
+    <ul class="navLinks left">
+        <li class="navLink">
+            <span class="navNum">01</span>
+            <a href="/root/curriculum/curriculum.html">
+                <span class="multiFont">C</span><span class="multiFont">u</span><span class="multiFont">r</span><span class="multiFont">r</span><span class="multiFont">i</span><span class="multiFont">c</span><span class="multiFont">u</span><span class="multiFont">l</span><span class="multiFont">u</span><span class="multiFont">m</span>
+            </a>
+        </li>
 
-                <li class="navLink">
-                    <span>(03)</span>
-                    <a href="/root/project/project.html">Projects</a>
-                </li>
-
-                <li class="navLink">
-                    <span>(04)</span>
-                    <a href="/root/student/student.html">Students</a>
-                </li>
-
-                <li class="navLink">
-                    <span>(05)</span>
-                    <a href="/root/credit/credit.html">Credit</a>
-                </li>
+        <li class="navLink">
+            <span class="navNum">02</span>
+            <a><span class="multiFont2">S</span><span class="multiFont2">T</span><span class="multiFont2">O</span><span class="multiFont2">R</span><span class="multiFont2">Y</span></a>
+            <ul>
+                <li class="passion"><a href="story/passion.html"><img src="/static/img/header/passion_icon.png">PASSION</a></li>
+                <li class="explode"><a href="story/explode.html"><img src="/static/img/header/explode_icon.png">EXPLODE</a></li>
+                <li class="start"><a href="/root/story/start/start.html"><img src="/static/img/header/start_icon.png">START</a></li>
             </ul>
+        </li>
+    </ul>
+
+    <ul class="navLinks right">
+        <li class="navLink">
+            <span class="navNum">03</span>
+            <a href="/root/project/project.html">
+                <span class="multiFont3">P</span><span class="multiFont3">R</span><span class="multiFont3">O</span><span class="multiFont3">J</span><span class="multiFont3">E</span><span class="multiFont3">C</span><span class="multiFont3">T</span><span class="multiFont3">S</span>
+                </a>
+        </li>
+
+        <li class="navLink">
+            <span class="navNum">04</span>
+            <a href="/root/student/student.html"><span class="multiFont4">S</span><span class="multiFont4">T</span><span class="multiFont4">U</span><span class="multiFont4">D</span><span class="multiFont4">E</span><span class="multiFont4">N</span><span class="multiFont4">T</span><span class="multiFont4">S</span></a>
+        </li>
+
+        <li class="navLink">
+            <span class="navNum">05</span>
+            <a href="/root/credit/credit.html"><span class="multiFont5">C</span><span class="multiFont5">R</span><span class="multiFont5">E</span><span class="multiFont5">D</span><span class="multiFont5">I</span><span class="multiFont5">T</span></a>
+        </li>
+    </ul>
+</div>
         </div>
     </header>
 

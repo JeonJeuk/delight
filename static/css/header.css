@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'BangStart';
+    font-weight: 100;
+    src: url("/font/Bang-Start.woff2") format('woff2'), url("/fonts/Bang-Start.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    src: url("/fonts/Bang-Passion.woff2") format('woff2'), url("/fonts/Bang-Passion.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'BangExplode';
+    font-weight: 100;
+    src: url("/fonts/Bang-Explode.woff2") format('woff2'), url("/fonts/Bang-Explode.ttf") format('truetype');
+}
+
+
+
 /* 초기값 설정 */
 
 a{
@@ -41,7 +61,7 @@ header {
     height: 5.63em;
     width: 100vw;
     position: fixed;
-    z-index:1000;
+    z-index:2;
     background:transparent;
     margin-top:0;
     margin-bottom:0;
@@ -93,10 +113,10 @@ header .mobileLogo{
     font-family: 'Pretendard';
     font-weight: 400;
     word-wrap: break-word;
-    margin: 2em 1.5em;
+    padding: 1em 1.5em;
 }
 
-.menuItem a{
+.menuItem li a{
     height: 2.13em;
     width: 6em;
     font-size: 1.2em;
@@ -130,9 +150,85 @@ header .btnMenu {
     margin-right: calc(100vw * 40 / 1920)!important;
 }
 
-/* header .btnMenu svg{
-    margin-top: calc(100vw * 20 / 1920);
-} */
+/* 아코디언 */
+
+.accessMenu{
+	/* display: table; */
+	margin: 1em auto;
+}
+
+.accessMenu li{
+	display: inline-block;
+	position: relative;
+    text-align:left;
+}
+
+
+.accessMenu > li:hover .accessSubmenu{
+    display: block; /* 추가 */
+	top: 100%;
+	left: auto;
+}
+
+.accessMenu li a{
+	color: #eee;
+	display: block;
+	padding: 0em 2em;
+	text-decoration: none;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+
+.accessSubmenu{
+    width:calc(100vw * 220 / 1920);
+    height:calc(100vw * 220 / 1920);
+	background: #121212;
+    left:15px;
+    top:85px;
+	position: absolute;
+    border-radius: 10px; 
+    border: 1px rgba(255, 255, 255, 0.20) solid;
+    display:none;
+}
+
+.accessSubmenu li{
+    display:flex;
+    align-items: center;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+.accessSubmenu li:nth-child(1){
+    font-family: 'BangPassion';
+}
+
+.accessSubmenu li:nth-child(2){
+    font-family: 'BangExplode';
+}
+
+.accessSubmenu li:nth-child(3){
+    font-family: 'BangStart';
+}
+
+/* 이미지와 텍스트 사이의 간격 조절 */
+.accessSubmenu li img{
+    width:25px;
+    margin-left:calc(100vw * 20 / 1920);
+    margin-top:calc(100vw * -5 / 1920);
+}
+
+.accessSubmenu li a{
+    margin-top:calc(100vw * 25 / 1920);
+    margin-left:calc(100vw * -25 / 1920);
+}
+
+.is-show{
+    left: auto;
+    top: auto;
+}
 
 /* 오버레이 메뉴 */
 header #squareContainer{
@@ -149,8 +245,8 @@ header #squareContainer{
 }
 
 header .square{
-    width:75px;
-    height:75px;
+    width:80px;
+    height:80px;
     box-sizing:border-box;
     z-index:1;
     pointer-events: none;
@@ -173,30 +269,202 @@ header .contentOverlay{
     visibility: hidden;
 }
 
-header .contentOverlay .navLink{
-    display:flex;
+header .contentOverlay .navContainer .navLink{
     font-family: 'Pretendard';
+    justify-content: space-between;
     font-weight:600;
-    padding: 0.5em 0 0 0;
-    font-size: calc(100vw * 60 / 1920);
+    padding: 1em 0 0 0;
+    font-size: calc(100vw * 104 / 1920);
+    padding-left :calc(100vw * 60 / 1920);
 }
 
-header .contentOverlay .navLink span{
+header .contentOverlay .navContainer .navLinks {
+    display: flex;  
+    flex-direction: column;  
+    text-align: left;  
+}
+
+header .contentOverlay .navContainer .navLink .navNum{
     position:relative;
-    top:0.3em;
-    
+    font-size: calc(100vw * 64 / 1920);
 }
 
-header .contentOverlay .navLink a{
-    padding: 0 1em;
-    font-size:2em;
+header .contentOverlay .navContainer .navLink .navNum:nth-child(1){
+    font-family: 'BangPassion';
+}
+
+header .contentOverlay .navContainer .navLink .navNum:nth-child(2){
+    font-family: 'BangPassion';
+}
+
+header .contentOverlay .navContainer .navLink .navNum:nth-child(3){
+    font-family: 'BangStart';
+}
+
+header .contentOverlay .navContainer .navLink .navNum:nth-child(4){
+    font-family: 'BangPassion';
+}
+
+header .contentOverlay .navContainer .navLink .navNum:nth-child(5){
+    font-family: 'BangStart';
+}
+
+
+
+header .contentOverlay .navContainer .navLink a { 
+    padding-left :calc(100vw * 20 / 1920);
+    padding-right :calc(100vw * 120 / 1920);
     text-decoration: none;
     color:#ffffff;
     text-transform: uppercase;
     pointer-events: auto;
-    font-family: 'Pretendard';
     font-weight:500;
 }
+
+.navContainer {
+    display: flex;  
+    justify-content: space-between;   
+}
+
+.navLinks {
+    text-align: left;  
+}
+
+.navLink ul {
+    display: block;  
+    list-style: none;  
+    padding-left: calc(100vw * 20 / 1920); 
+    font-size: calc(100vw * 70 / 1920);
+    padding-top: calc(100vw * 30 / 1920); 
+}
+
+.navLink ul li{
+    padding-top: calc(100vw * 20 / 1920); 
+}
+
+
+.navLink ul li a img {
+    margin-right: calc(100vw * 50 / 1920); 
+    width:calc(100vw * 40 / 1920);
+    height: auto; 
+    vertical-align: middle; 
+}
+
+
+
+
+
+
+
+
+.passion a{
+    font-family: 'BangPassion';
+}
+
+.explode a{
+    font-family: 'BangExplode';
+}
+
+.start a{
+    font-family: 'BangStart';
+}
+
+
+/* 폰트 */
+
+.multiFont{
+    font-family: var(--font);
+}
+
+
+.multiFont::before {
+    content: attr(data-content);
+}
+
+.multiFont2{
+    font-family: var(--font);
+}
+
+
+.multiFont2::before {
+    content: attr(data-content);
+}
+
+.multiFont3{
+    font-family: var(--font);
+}
+
+
+.multiFont3::before {
+    content: attr(data-content);
+}
+
+.multiFont4{
+    font-family: var(--font);
+}
+
+
+.multiFont4::before {
+    content: attr(data-content);
+}
+
+.multiFont5{
+    font-family: var(--font);
+}
+
+
+.multiFont5::before {
+    content: attr(data-content);
+}
+
+
+
+
+
+.multiFont:nth-child(1) { --font: 'BangPassion'; }
+.multiFont:nth-child(2) { --font: 'BangPassion'; }
+.multiFont:nth-child(3) { --font: 'BangExplode'; }
+.multiFont:nth-child(4) { --font: 'BangPassion'; }
+.multiFont:nth-child(5) { --font: 'BangPassion'; }
+.multiFont:nth-child(6) { --font: 'BangExplode'; }
+.multiFont:nth-child(7) { --font: 'BangPassion'; }
+.multiFont:nth-child(8) { --font: 'BangPassion'; }
+.multiFont:nth-child(9) { --font: 'BangStart'; }
+.multiFont:nth-child(10) { --font: 'BangPassion'; }
+
+.multiFont2:nth-child(1) { --font: 'BangPassion'; }
+.multiFont2:nth-child(2) { --font: 'BangStart'; }
+.multiFont2:nth-child(3) { --font: 'BangPassion'; }
+.multiFont2:nth-child(4) { --font: 'BangStart'; }
+.multiFont2:nth-child(5) { --font: 'BangPassion'; }
+
+.multiFont3:nth-child(1) { --font: 'BangStart'; }
+.multiFont3:nth-child(2) { --font: 'BangPassion'; }
+.multiFont3:nth-child(3) { --font: 'BangStart'; }
+.multiFont3:nth-child(4) { --font: 'BangExplode'; }
+.multiFont3:nth-child(5) { --font: 'BangStart'; }
+.multiFont3:nth-child(6) { --font: 'BangExplode'; }
+.multiFont3:nth-child(7) { --font: 'BangStart'; }
+.multiFont3:nth-child(8) { --font: 'BangPassion'; }
+
+
+.multiFont4:nth-child(1) { --font: 'BangPassion'; }
+.multiFont4:nth-child(2) { --font: 'BangExplode'; }
+.multiFont4:nth-child(3) { --font: 'BangPassion'; }
+.multiFont4:nth-child(4) { --font: 'BangStart'; }
+.multiFont4:nth-child(5) { --font: 'BangPassion'; }
+.multiFont4:nth-child(6) { --font: 'BangExplode'; }
+.multiFont4:nth-child(7) { --font: 'BangPassion'; }
+.multiFont4:nth-child(8) { --font: 'BangPassion'; }
+
+.multiFont5:nth-child(1) { --font: 'BangStart'; }
+.multiFont5:nth-child(2) { --font: 'BangPassion'; }
+.multiFont5:nth-child(3) { --font: 'BangStart'; }
+.multiFont5:nth-child(4) { --font: 'BangStart'; }
+.multiFont5:nth-child(5) { --font: 'BangStart'; }
+.multiFont5:nth-child(6) { --font: 'BangStart'; }
+
+
 
 /* ===== 스크롤탑 =====  */
 .topBtn{
