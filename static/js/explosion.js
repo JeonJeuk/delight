@@ -29,7 +29,7 @@ const dates = [
 const imageList = [];
 for (var i = 0; i < imageFiles.length; i++) {
     var image = {
-        src: './img/explosion/archive/' + imageFiles[i],
+        src: '../../../stactic/img/explosion/archive/' + imageFiles[i],
         date: dates[i]
     };
     imageList.push(image);
