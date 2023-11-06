@@ -1,19 +1,3 @@
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         if (entry.isIntersecting) {  
-//             setTimeout(() => {
-//                 entry.target.style.clipPath = 'circle(150% at 50% 100%)';
-//             }, 30); // 100밀리초(0.1초)의 지연시간
-//         } else {
-//             entry.target.style.clipPath = 'circle(0% at 50% 100%)';
-//         }
-//     });
-// });
-
-// const delightInsight = document.querySelector('.delightInsight');
-// observer.observe(delightInsight);
-
-
 //Video 감지하고 실행하는 기능입니다.
 const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -42,7 +26,7 @@ videoObserver.observe(introVideo);
   const startCircle = document.querySelectorAll('g[id^="start"] circle');
   let hoverTimer = {};
 
-  console.log(explosion);
+//   console.log(explosion);
 
   explosion.forEach(path => {
       path.addEventListener('mouseover', () => {
@@ -150,8 +134,8 @@ videoObserver.observe(introVideo);
     });
   });
 
-
-  const observer = new IntersectionObserver((entries) => {
+//Typeface 오버시티 기능입니다.
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = 1;
@@ -163,15 +147,50 @@ videoObserver.observe(introVideo);
     });
 });
 
+
 const typeface = document.querySelectorAll('.typeface');
 typeface.forEach(element => {
     observer.observe(element);
 });
 
 
+//텍스트 입력 시 똑같이 입력되는 기능입니다.
+// #textInput 요소 가져오기
+const textInput = document.getElementById('textInput');
+
+textInput.addEventListener('input', function() {
+    const inputText = textInput.value;
+
+    // 정규식을 사용하여 입력 체크
+    if (inputText.match(/[^A-Za-z0-9\s!]/)) {
+        // 입력된 텍스트에 허용된 문자 외의 것이 있으면 해당 문자를 지우고 빈 문자열로 대체
+        textInput.value = inputText.replace(/[^A-Za-z0-9\s!]/g, '');
+        alert('영어, 숫자, 공백, 느낌표만 입력 가능합니다.');
+    }
+    
+    const finalText = textInput.value;
+
+    // .box에 최종 텍스트 표시
+    passionBox.innerText = finalText;
+    explosionBox.innerText = finalText;
+    startBox.innerText = finalText;
+});
+
+const fontSizeController = document.getElementById('fontSizeController');
+const passionBox = document.getElementById('passionBox');
+const explosionBox = document.getElementById('explosionBox');
+const startBox = document.getElementById('startBox');
+
+fontSizeController.addEventListener('input', function() {
+    const fontSize = fontSizeController.value + 'px';
+    passionBox.style.fontSize = fontSize;
+    explosionBox.style.fontSize = fontSize;
+    startBox.style.fontSize = fontSize;
+});
 
 
 
+//배너 무한 루프 기능입니다.
 window.addEventListener('load', function() {
     setFlowBanner();
 });
@@ -181,9 +200,8 @@ function setFlowBanner() {
     const list = document.querySelector('.synergyBanner .synergyList');
     let wrapWidth = wrap.offsetWidth;
     let listWidth = list.offsetWidth;
-    const speed = .3; // Set the number of pixels to move per second
+    const speed = .1;
 
-    // Clone the list
     let clone = list.cloneNode(true);
     wrap.appendChild(clone);
     flowBannerAct();
@@ -203,4 +221,12 @@ function setFlowBanner() {
     }
 }
 
+
+
+
+    const rangeParagraph = document.querySelector('.range p');
+
+    fontSizeController.addEventListener('input', function() {
+        rangeParagraph.textContent = fontSizeController.value + 'px';
+    });
 

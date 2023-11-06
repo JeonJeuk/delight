@@ -1,5 +1,6 @@
 /* 푸터 */
 footer {
+    width: 100%;
     bottom:0;
     height: calc(100vw * 280 / 1920);
     padding: 0 calc(100vw * 100 / 1920) !important;
@@ -16,6 +17,7 @@ footer {
     line-height: 130%;
     padding: calc(100vw * 50 / 1920) 0;
     border-top: solid calc(100vw * 1 / 1920) #fff;
+
 }
 
 .footerLeft {

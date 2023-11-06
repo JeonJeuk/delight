@@ -82,15 +82,20 @@ body::-webkit-scrollbar {
 }
 
 body {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    height: 100%;
 }
 
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+.scrollContainer {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -117,6 +122,26 @@ Main Style
 .main .mainWrapper .mainInterac {
     width: 100%;
     height: 100%;
+    display: flex;
+}
+
+.main .mainWrapper .mainInterac .intrac {
+    width: 100%;
+    position: relative;
+}
+
+.main .mainWrapper .mainInterac .intrac div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .mainWrapper .mainInterac .intrac #lottieAnimation2 {
+    display: none;
+}
+
+.main .mainWrapper .mainInterac .intrac #lottieAnimation3 {
+    display: none;
 }
 
 .main .mainWrapper .mainInterac img {
@@ -164,6 +189,9 @@ Delight Insight Style
     /* clip-path: circle(0% at 50% 100%); */
     transition: all 1s cubic-bezier(0, 0, 0.58, 0.89);
     margin-top: 10px;
+    background: url('/static/img/index/delightInsightBg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .delightInsight .delightWrapper {
@@ -180,14 +208,14 @@ Delight Insight Style
     left: 0;
 }
 
-.delightInsight .delightWrapper h1 {
+.delightInsight .delightWrapper .delightBox h1 {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.delightInsight .delightWrapper img {
-    margin-bottom: 50px;
+.delightInsight .delightWrapper .delightBox img {
+    margin-bottom: 80px;
 }
 
 .delightInsight .delightWrapper p {
@@ -280,6 +308,27 @@ patternControl Style
     margin-bottom: 100px;
 }
 
+.patternControl .patternControlWrapper .right .rightWrapper .passionTitle h1 {
+    font-size: 100px;
+    font-family: 'BangPassion';
+    font-weight: 100;
+    color: #FF1345;
+}
+
+.patternControl .patternControlWrapper .right .rightWrapper .explodeTitle h1 {
+    font-size: 100px;
+    font-family: 'BangExplode';
+    font-weight: 100;
+    color: #A54AFF;
+}
+
+.patternControl .patternControlWrapper .right .rightWrapper .startTitle h1 {
+    font-size: 100px;
+    font-family: 'BangStart';
+    font-weight: 100;
+    color: #0AA7FF;
+}
+
 .patternControl .patternControlWrapper .right .rightWrapper .controls {
     width: 100%;
 }
@@ -291,7 +340,7 @@ patternControl Style
 
 .patternControl .patternControlWrapper .right .rightWrapper .controls .controller h3 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .patternControl .patternControlWrapper .right .rightWrapper .controls .controller .controlWrapper {
@@ -303,8 +352,8 @@ patternControl Style
 
 .patternControl .patternControlWrapper .right .rightWrapper .controls .controller .controlWrapper .controlBar {
     width: 100%;
-    height: 100%;
-    background: white;
+    height: 3px;
+    background: rgb(255, 255, 255, .5);
     border-radius: 10px;
 }
 
@@ -331,12 +380,13 @@ patternControl Style
 .patternControl .patternControlWrapper .right .rightWrapper .description h1 {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .patternControl .patternControlWrapper .right .rightWrapper .description p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 160%;
 }
 
 .patternControl .patternControlWrapper .right .rightWrapper .patternStartImg {
@@ -397,6 +447,9 @@ GridSystem Style
     margin-right: auto;
     padding-top: 150px;
     padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .gridSystem .gridSystemWrapper .gridTitle img {
     margin-bottom: 20px;
@@ -438,28 +491,54 @@ GridSystem Style
 }
 
 .gridSystem .gridSystemWrapper .patternBtn {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    z-index: 100;
 }
 
-.gridSystem .gridSystemWrapper .patternBtn .btn {
-    width: 230px;
-    padding: 15px 0;
-    background: #fff;
-    display: flex;
-    justify-content: center;
+.gridSystem .gridSystemWrapper .btn {
+    padding-left: 50px;
     text-align: center;
     cursor: pointer;
-    margin: 10px;
-    border-radius: 70px;
-    font-size: 28px;
+}
+
+.gridSystem .gridSystemWrapper .btn img {
+    width: 75px;
+    height: 75px;
+}
+
+.gridSystem .gridSystemWrapper .btn p {
+    font-size: 22px;
+}
+
+.gridSystem .gridSystemWrapper .patternBtn .passionBtn {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    color: #FF1345;
+}
+
+.gridSystem .gridSystemWrapper .patternBtn .passionBtn p {
+    color: #FF1345;
+} 
+
+.gridSystem .gridSystemWrapper .patternBtn .explosionBtn {
+    font-family: 'BangExplode';
+    font-weight: 100;
+    color: #A54AFF;
+}
+
+.gridSystem .gridSystemWrapper .patternBtn .explosionBtn p{
+    color: #A54AFF;
+}
+
+
+.gridSystem .gridSystemWrapper .patternBtn .startBtn {
+    font-family: 'BangStart';
+    font-weight: 100;
+    color: #0AA7FF;
+}
+
+.gridSystem .gridSystemWrapper .patternBtn .startBtn p {
+
+    color: #0AA7FF;
 }
 
 #passion {
@@ -545,9 +624,127 @@ FontInput Style
     height: 100vh;
 }
 
-.fontInputWrapper {
-    width: 100%;
+.fontInput .fontInputWrapper {
+    width: 90%;
     height: 100%;
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fontInput .fontInputWrapper .fontInputTitle {
+    font-size: 24px;
+    color: #fff;
+}
+
+.fontInput .fontInputWrapper .fontInputTitle p {
+    margin-top: 30px;
+}
+
+.fontInput .fontInputWrapper .fontInputBox {
+    width: 100%;
+}
+
+.fontInput .fontInputWrapper .fontInputBox .top {
+    display: flex;
+    margin-top: 76px;
+}
+
+.fontInput .fontInputWrapper .fontBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.fontInput .fontInputWrapper .fontInputBox .top #textInput {
+    width: 100%;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+}
+
+.fontInput .fontInputWrapper .fontBox .box {
+    width: 548px;
+    height: 460px;
+    border: 1px solid #fff;
+    font-size: 36px;
+    overflow-y: hidden;
+    border-radius: 20px;
+}
+
+.fontInput .fontInputWrapper .fontBox .box textarea {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.fontInput .fontInputWrapper .fontBox .box .patternBox {
+    display: flex;
+    color: white;
+    font-size: 36px;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+.fontInput .fontInputWrapper .fontBox .box .passionBox {
+    font-family: 'BangPassion';
+    font-weight: 100;
+}
+
+.fontInput .fontInputWrapper .fontBox .box .explosionBox {
+    font-family: 'BangExplode';
+    font-weight: 100;
+}
+
+.fontInput .fontInputWrapper .fontBox .box .startBox {
+    font-family: 'BangStart';
+    font-weight: 100;
+}
+
+.fontInput .fontInputWrapper .fontBox .box .patternBox img {
+    width: 18px;
+    height: 18px;
+    padding-right: 20px;
+}
+
+.fontInput .fontInputWrapper .fontBox .passionFont {
+    font-family: 'BangPassion';
+    font-weight: 100;
+}
+
+.fontInput .fontInputWrapper .fontBox .explosionFont {
+    font-family: 'BangExplode';
+    font-weight: 100; 
+}
+
+.fontInput .fontInputWrapper .fontBox .startFont {
+    font-family: 'BangStart';
+    font-weight: 100;
+}
+
+.range {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.range img,
+.range input,
+.range p {
+    padding: 0 10px;
+}
+
+.range p {
+    font-size: 24px;
+    color: white;
 }
 
 
@@ -562,6 +759,7 @@ Syenrgy Style
 .synergy .synergyWrapper {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .synergy .synergyWrapper .synergyBanner {
@@ -569,6 +767,8 @@ Syenrgy Style
     display: flex;
     overflow: hidden;
     padding-top: 100px;
+    position: absolute;
+    bottom: 100px;
 }
 
 .synergy .synergyWrapper .synergyBanner .synergyList {
@@ -604,4 +804,85 @@ Syenrgy Style
     font-weight: 300;
     line-height: 160%;
     color: #fff;
+}
+
+
+
+/*---------------
+Bang Typeface Style
+----------------*/
+.bangTypeface {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bangTypeface .bangTFWrapper {
+    width: 90%;
+    height: 100%;
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bangTypeface .bangTFWrapper .bangTFTitle {
+    width: 100%;
+}
+
+.bangTypeface .bangTFWrapper .bangTFTitle img {
+    margin-bottom: 30px;
+}
+
+.bangTypeface .bangTFWrapper .bangTFTitle p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.bangTypeface .bangTFWrapper .line {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin: 70px 0;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont {
+    width: 100%;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangTFContBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangTFContBox h1 {
+    font-size: 80px;
+    width: 10%;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangTFContBox p {
+    font-size: 35px;
+    width: 65%;
+    color: #fff;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangPassion {
+    font-family: 'BangPassion';
+    font-weight: 100;
+    color: #FF1345;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangExplosion {
+    font-family: 'BangExplode';
+    font-weight: 100;
+    color: #A54AFF;
+}
+
+.bangTypeface .bangTFWrapper .bangTFCont .bangStart {
+    font-family: 'BangStart';
+    font-weight: 100;
+    color: #0AA7FF;
 }
