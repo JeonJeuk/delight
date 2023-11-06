@@ -5,41 +5,41 @@ const writes = [
     {
         name: "김나은",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박세현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박유현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "홍지현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정주원",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     {
         name: "전제욱",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -50,42 +50,42 @@ const writes = [
     {
         name: "진민희",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "신지원",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "장채은",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "허서아",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {  
         name: "김태연",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김도연", 
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -94,42 +94,42 @@ const writes = [
     {
         name: "조용은",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이동현",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "나현영",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박유진",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "신윤재",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이승헌",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -138,21 +138,21 @@ const writes = [
     {
         name: "박재승",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "최의림",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "유성진",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -161,42 +161,42 @@ const writes = [
     {
         name: "조은빈",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이사랑",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "문자영",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박서빈",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "오나영",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "양유정",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -205,42 +205,42 @@ const writes = [
     {
         name: "장지혁",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "성아현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "고유정",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김시은",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김정현",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "남수진",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -250,35 +250,35 @@ const writes = [
     {
         name: "전윤언",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정수민",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이수빈",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "최지혁",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "임찬홍",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -287,21 +287,21 @@ const writes = [
     {
         name: "이인주",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이재원",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "서예진",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -310,28 +310,28 @@ const writes = [
     {
         name: "김수민",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이서울",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "임준언",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김태희",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -339,14 +339,14 @@ const writes = [
     {
         name: "서지은",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "유진",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -355,42 +355,42 @@ const writes = [
     {
         name: "김정민",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김다흰",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정재영",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "진채윤",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "안서현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김민지",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -399,34 +399,34 @@ const writes = [
     {
         name: "김유진",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     {
         name: "유예린",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "곽유빈",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "추예은",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이지영",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -435,34 +435,34 @@ const writes = [
     {
         name: "채예나",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "배인영",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     {
         name: "박민영",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "도희승",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "최서영",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -471,42 +471,42 @@ const writes = [
     {
         name: "성윤지",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정서현",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정현지",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정기주",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "정서정",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박민영",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -515,49 +515,49 @@ const writes = [
     {
         name: "박지영",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "장나영",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김소정",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이주원",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "노민정",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이성우",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "이유진",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -566,49 +566,49 @@ const writes = [
     {
         name: "정민영",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김지섭",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "모경훈",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "박재민",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "나병호",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "우혁제",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김태연",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -618,35 +618,35 @@ const writes = [
     {
         name: "고주현",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "오민아",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "강희영",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "김이설",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "추혜화",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
@@ -655,35 +655,35 @@ const writes = [
     {
         name: "김민석",
         detail: "Planner",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "신민우",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "권도희",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "조서윤",
         detail: "Designer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
     {
         name: "장정은",
         detail: "Programmer",
-        nameicon: "../img/student/icon/planner_icon.png",
+        nameicon: "../../static/img/student/icon/planner_icon.png",
         write: "언제나 성장하는 기획자가 되자!!",
     },
     
