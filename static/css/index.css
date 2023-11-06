@@ -136,13 +136,13 @@ Main Style
     left: 0;
 }
 
-.main .mainWrapper .mainInterac .intrac #lottieAnimation2 {
+/* .main .mainWrapper .mainInterac .intrac #lottieAnimation2 {
     display: none;
 }
 
 .main .mainWrapper .mainInterac .intrac #lottieAnimation3 {
     display: none;
-}
+} */
 
 .main .mainWrapper .mainInterac img {
     position: absolute;
